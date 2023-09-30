@@ -1,0 +1,72 @@
+body {
+    box-sizing:content-box;
+    position:static;
+    background-color: rgb(48, 37, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+    font-size:1em;
+    overflow-wrap:break-word;
+    word-break: break-all;
+}
+body h1 {
+    text-align: center;
+}
+span.small{
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    font-family: "Times New Roman", Georgia, Garamond, serif;
+    position: relative;
+    top: 50%;
+    right:25%;
+    color: #ddd;
+    padding: 15%;
+}
+div.hero > h1 {
+    font-size:2.5vw;
+}
+#hero-image {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)), url("background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+div.hero > p {
+    display: none;
+    font-size:1.4vw;
+}
+@media only screen and (max-width: 600px){
+    .hero {
+        padding:15%;
+    }
+    div.hero > h1 {
+        font-size:1.3em;
+    }
+    div.hero > p {
+        font-size:1em;
+    }
+}
+#nav-fam {
+    box-sizing:border-box;
+    padding-bottom:20mm;
+}
+.navbar {
+    background-color: #231123;
+    padding:0;
+
+}
+.nav-link {
+    color: #eee !important;
+    margin:auto;
+    font-size:1em;
+}
+nav div a:hover, .navbar-toggler-icon:hover {
+    background-color: #543354;
+}
+nav div a.active {
+    background-color: #540065;
+}
