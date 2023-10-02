@@ -4,6 +4,7 @@
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic">
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/85d7921a8b.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="eQ_mHiRy-AlNkXULPIqrRLlQA6ZmJQPev-bO9QNjM_A" />
@@ -15,6 +16,11 @@
   <body>
     <!-- nav bar -->
     <nav class="navbar-expand-lg">
+      <div style="box-sizing: border-box; height: 15px;">
+        <button id="languages" style="float:right; font-size: 13px; display: inline !important;" lang="fa" onclick="showFarsiContent()">فا</button>
+        <span style="float:right; font-size: 12px;">|</span>
+        <button id="languages" style="float:right; font-size: 12px; display: inline !important;" onclick="showEnglishContent()">En</button>
+      </div>
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
@@ -22,11 +28,17 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class=" navbar nav flex-column">
 
-            <a class="nav-link" aria-current="page" href="#hero-image">Home</a>
-            <a class="nav-link" aria-current="page" href="#about_me">About Me</a>
-            <a class="nav-link" aria-current="page" href="#My_Abilities">My Abilities</a>
-            <a class="nav-link" aria-current="page" href="#conatct_me">Conatct Me</a>
+            <a name="english" class="nav-link show" aria-current="page" href="#hero-image">Home</a>
+            <a name="persian" lang="fa" style="direction: ltr;" class="nav-link hide" aria-current="page" href="#hero-image">خانه</a>
 
+            <a name="english" class="nav-link show" aria-current="page" href="#about_me">About Me</a>
+            <a name="persian" lang="fa" style="direction: ltr;" class="nav-link hide" aria-current="page" href="#about_me">درباره من</a>
+
+            <a name="english" class="nav-link show" aria-current="page" href="#My_Abilities">My Abilities</a>
+            <a name="persian" lang="fa" style="direction: ltr;" class="nav-link hide" aria-current="page" href="#My_Abilities">مهارت های من</a>
+
+            <a name="english" class="nav-link show" aria-current="page" href="#conatct_me">Conatct Me</a>
+            <a name="persian" lang="fa" style="direction: ltr;" class="nav-link hide" aria-current="page" href="#conatct_me">ارتباط با من</a>
 
           </div>
         </div>
@@ -53,42 +65,74 @@
 
       <!-- about me -->
       <div id="about_me">
-        <h2>ABOUT ME</h2>
-        <br>
-        <div id="about_me_text">
-          <p>I'm <strong>Kiarash Bakhshaei</strong>, a versatile professional with a unique blend of expertise in biology and computer science.</p>
-          
-          <p> I invite you to explore my journey, where science meets technology:</p>
-                  
-          <p>I've always been captivated by the intricate world of biology, leading me to pursue a major in dentistry. </p>
-          <p> However, as I neared graduation, I discovered another passion; <em>programming and computer science</em>. </p>
-          <p>Self-taught in <code>Python</code>, I quickly transitioned into a professional, opening doors to a realm where data science and machine learning became my forte.</p>
-                  
-          <p>I honed my skills at <em>Tehran University</em> in IRAN, delving into the fascinating world of computer science.</p>
-          <p> In addition to Python, I added an array of programming languages to my toolkit, including:</p>
-            <ul>
-              <li><code>C</code></li>
-              <li><code>HTML</code></li>
-              <li><code>CSS</code></li>
-              <li><code>JavaScript</code></li>
-              <li><code>SQL</code></li>
-            </ul>      
-          <p>This diverse skill set empowers me to tackle multifaceted challenges seamlessly.</p>
-          <p>My true passion lies in the convergence of artificial intelligence with my deep-rooted knowledge of biology. 
-          <p>The goal? To harness the potential of AI to revolutionize the field of bio-engineering. </p>
-          <p>My journey is a testament to my unrelenting curiosity, always eager to learn, grow, and adapt.</p>
-          
-          <p>With proficiency in three languages: <strong>Persian</strong>, <strong>English</strong>, and <strong>French</strong>. I bridge cultures and communicate seamlessly, a valuable asset in our interconnected world.</p>
-          <br>      
-          <p>Join me in my quest to bridge the realms of biology and computer science, where innovation knows no bounds.</p>
-          <p style="font-size:1.1em; font-weight: bold; font-style: italic;">Let's connect, collaborate, and make a meaningful impact together.</p>
+        <div name="english" class="show">
+          <h2>ABOUT ME</h2>
+          <br>
+          <div id="about_me_text">
+            <p>I'm <strong>Kiarash Bakhshaei</strong>, a versatile professional with a unique blend of expertise in biology and computer science.</p>
+
+            <p> I invite you to explore my journey, where science meets technology:</p>
+
+            <p>I've always been captivated by the intricate world of biology, leading me to pursue a major in dentistry. </p>
+            <p> However, as I neared graduation, I discovered another passion; <em>programming and computer science</em>. </p>
+            <p>Self-taught in <code>Python</code>, I quickly transitioned into a professional, opening doors to a realm where data science and machine learning became my forte.</p>
+
+            <p>I honed my skills at <em>Tehran University</em> in IRAN, delving into the fascinating world of computer science.</p>
+            <p> In addition to Python, I added an array of programming languages to my toolkit, including:</p>
+              <ul>
+                <li><code>C</code></li>
+                <li><code>HTML</code></li>
+                <li><code>CSS</code></li>
+                <li><code>JavaScript</code></li>
+                <li><code>SQL</code></li>
+              </ul>      
+            <p>This diverse skill set empowers me to tackle multifaceted challenges seamlessly.</p>
+            <p>My true passion lies in the convergence of artificial intelligence with my deep-rooted knowledge of biology. 
+            <p>The goal? To harness the potential of AI to revolutionize the field of bio-engineering. </p>
+            <p>My journey is a testament to my unrelenting curiosity, always eager to learn, grow, and adapt.</p>
+            
+            <p>With proficiency in three languages: <strong>Persian</strong>, <strong>English</strong>, and <strong>French</strong>. I bridge cultures and communicate seamlessly, a valuable asset in our interconnected world.</p>
+            <br>      
+            <p>Join me in my quest to bridge the realms of biology and computer science, where innovation knows no bounds.</p>
+            <p style="font-size:1.1em; font-weight: bold; font-style: italic;">Let's connect, collaborate, and make a meaningful impact together.</p>
+          </div>
+        </div>
+
+        <div name="persian" lang="fa" class="farsi hide">
+          <h2>درباره ی من</h2>
+          <br>
+          <div id="about_me_text">
+            <p> سلام، من <strong> کیارش بخشائی </strong>هستم، یک متخصص حرفه‌ای در چند زمینه علمی، با ترکیب منحصربه‌فردی از دانش در زمینه‌های زیست‌شناسی و علوم کامپیوتر. </p>
+            <p>از شما دعوت می‌کنم که در سفر من، جایی که علم و تکنولوژی در هم می آمیزند ، شریک باشید. </p>
+            <p>همیشه به جهان پیچیده زیست‌شناسی جذب می‌شدم، که منجر به تحصیل در رشته دندانپزشکی شد. با این حال، در حین نزدیک شدن به فارغ‌التحصیلی، یک عشق دیگر را در برنامه‌نویسی و علوم کامپیوتر کشف کردم. </p>
+            <p>با خود آموزی زبان <code>Python</code>، به سرعت به یک حرفه‌ای در این زمینه تبدیل شدم.</p>
+            <p>مهارت‌های خود را در دانشگاه تهران در ایران به نقطه‌ی قوت رساندم و علاوه بر زبان  <code>Python</code>، زبان‌های برنامه‌نویسی متنوعی را به توانایی هایم اضافه کردم از جمله: </p>
+              <ul>
+                <li><code>C</code></li>
+                <li><code>HTML</code></li>
+                <li><code>CSS</code></li>
+                <li><code>JavaScript</code></li>
+                <li><code>SQL</code></li>
+              </ul>    
+            <p>این مجموعه متنوع از مهارت‌ها به من اجازه می‌دهد تا به هر چالشی به راحتی پاسخ دهم. </p>
+            <p>هدف واقعی من در اتحاد هوش مصنوعی با دانش عمیق زیست‌شناسی و بهره‌گیری از توانمندی هوش مصنوعی برای انقلاب در این حوزه قرار دارد.</p>
+            <p>سفر من نشان دهنده علاقه‌ بی پایانم  به یادگیری، رشد، و تطابق است.</p>
+            <p>با تسلط به سه زبان - فارسی، انگلیسی، و فرانسه فرهنگ‌ها را به هم متصل می‌کنم و به راحتی ارتباط برقرار می‌کنم.</p>
+            <p>به من در کشف امکانات جدید در زمینه‌های زیست‌شناسی و علوم کامپیوتر بپیوندید، جایی که نوآوری محدودیتی نمی‌شناسد.</p>
+            <p>با من ارتباط برقرار کنید، همکاری کنید، تا با هم تاثیر معناداری را خلق کنیم. </p>
+          </div>
         </div>
       </div>
       <hr>
 
       <!-- progress bars -->
       <div id="My_Abilities">
-        <h2>My Abilities</h2>
+        <div name="english" class="show">
+          <h2>My Abilities</h2>
+        </div>
+        <div name="persian" lang="fa" class="farsi hide">
+          <h2>مهارت های من</h2>
+        </div>
         <br>
         <div id="bars">
           <div style="margin: 20px;">
@@ -145,13 +189,24 @@
 
       <!-- contact me -->
       <div id="conatct_me">
-        <h4>Contact Me</h4>
-        <address>
-          Email: <a href="mailto:k.bakhshaei@gmail.com" target="_blank">k.bakhshaei@gmail.com</a><br>
-          Phone number: (+98) 935-736-9443<br>
-          Github profile: <a href="https://github.com/KiarashBakh" target="_blank">KiarashBakh</a><br>
-          LinkedIn profile: <a href="https://www.linkedin.com/in/kiarash-bakhshaei-9b2499278" target="_blank">Kiarash Bakhshaei</a><br>
-        </address>
+        <div name="english" class="show">
+          <h4>Contact Me</h4>
+          <address>
+            Email: <a href="mailto:k.bakhshaei@gmail.com" target="_blank">k.bakhshaei@gmail.com</a><br>
+            Phone number: (+98) 935-736-9443<br>
+            Github profile: <a href="https://github.com/KiarashBakh" target="_blank">KiarashBakh</a><br>
+            LinkedIn profile: <a href="https://www.linkedin.com/in/kiarash-bakhshaei-9b2499278" target="_blank">Kiarash Bakhshaei</a><br>
+          </address>
+        </div>
+        <div name="persian" lang="fa" class="farsi hide">
+          <h3>ارتباط با من</h3>
+          <address>
+            ایمیل: <a href="mailto:k.bakhshaei@gmail.com" target="_blank">k.bakhshaei@gmail.com</a><br>
+            شماره تماس: (+98) 935-736-9443<br>
+            گیت هاب: <a href="https://github.com/KiarashBakh" target="_blank">KiarashBakh</a><br>
+            لینکداین: <a href="https://www.linkedin.com/in/kiarash-bakhshaei-9b2499278" target="_blank">Kiarash Bakhshaei</a><br>
+          </address>
+        </div>
       </div>
     </div>
   </body>

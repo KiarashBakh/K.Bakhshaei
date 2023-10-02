@@ -7,12 +7,34 @@ body {
     overflow-wrap:break-word;
     word-break:normal;
 }
+[lang='fa'] {
+    direction: rtl;
+    font-family: 'Noto Naskh Arabic';
+    font-size: 1.1em;
+}
 body h1, h2 {
     text-align: center;
 }
 code {
     color: #ec7f8c;
 }
+
+/* language change */
+#languages {
+    color: #dfb6b2;
+    background-color: #07041e;
+    border-style: none;
+}
+#languages:hover {
+    background-color: #4f08319a;
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+
 /* hero */
 span.small{
     font-variant: small-caps;
@@ -69,7 +91,7 @@ nav {
 }
 .nav-link {
     color: #dfb6b2 !important;
-    width: 100%;
+    width: 190px;
     margin-top: 5px;
     padding: 10px 0px 10px 10px;
     font-size: 1em;
@@ -114,6 +136,11 @@ hr {
     margin-top: 40px;
     padding: 20px;
     padding-top: 40px;
+}
+.farsi {
+    padding: 40px;
+    margin-right: 10%;
+    margin-left:200px;
 }
 
 /* progress bars */
