@@ -1,177 +1,157 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/85d7921a8b.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-          function small_width() {
-            if (window.innerWidth  <= 600) {
-              document.getElementById("0").innerHTML = "Programmer";
-              document.getElementById("1").innerHTML = "Data Scientist";
-              document.getElementById("2").innerHTML = "Dentist";
-              document.getElementById("header").innerHTML = "<span class=small>Kiarash Bakhshaei</span>";
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85d7921a8b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+  
+    <title>Kiarash Bakhshaei</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class=" navbar nav flex-column">
 
-            }
-            else {
-              document.getElementById("0").innerHTML = "I'm a Programmer";
-              document.getElementById("1").innerHTML = "I'm a Data Scientist";
-              document.getElementById("2").innerHTML = "I'm a Dentist";
-              document.getElementById("header").innerHTML = "This is <span class=small>Kiarash Bakhshaei</span>";
-            };
-            jobs();
-          }
-          window.onload = small_width;
-          window.onresize = small_width;
-        </script>
-        <script>
-            var i = 1;
-            setInterval(jobs, 2000);
-            function jobs(){
-                for (n = 0; n < 3; n++){
-                    document.getElementById(n.toString()).style.display = "none";
-                };
-                document.getElementById(i.toString()).style.display = "inline";
-                i = (i+1)%3;
-            };
-        </script>
-        <title>Kiarash Bakhshaei</title>
-    </head>
-    <body>
-      <div id="hero-image">
-          <div class="hero">
-            <h1 id="header">This is <span class=small>Kiarash Bakhshaei</span></h1>
-            <br>
-            <p id="0" style="display:inline"></p>
-            <p id="1"></p>
-            <p id="2"></p>
+            <a class="nav-link" aria-current="page" href="#hero-image">Home</a>
+            <a class="nav-link" aria-current="page" href="#about_me">About Me</a>
+            <a class="nav-link" aria-current="page" href="#My_Abilities">My Abilities</a>
+            <a class="nav-link" aria-current="page" href="#conatct_me">Conatct Me</a>
+
+
           </div>
-      <!-- nav bar -->
+        </div>
       </div>
-        <nav class="navbar sticky-top navbar-expand-lg" >
-          <div class="container-fluid" >
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <!-- <span class="navbar-toggler-icon"></span> -->
-              <i class="fa-solid fa-bars" style="color: #ede;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav" >
-                <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
-                <a class="nav-link" aria-current="page" href="carrer.html">Carrer</a>
-                <a class="nav-link" aria-current="page" href="contact.html">Contact Me</a>
-                <a class="nav-link" aria-current="page" href="disclaimer.html">Disclaimer</a>
-              </div>
+    </nav>
+
+    <!-- hero image -->
+    <div id="hero-image">
+      <div class="hero">
+        <h1 id="header">This is <span class=small>Kiarash Bakhshaei</span></h1>
+        <br>
+        <br>
+        <p id="0" style="display:inline"></p>
+        <p id="1"></p>
+        <p id="2"></p>
+      </div>
+    </div>
+
+    <div id="main">
+      <div style="margin-top: 40%;">
+        <br>
+        <br>
+      </div>
+
+      <!-- about me -->
+      <div id="about_me">
+        <h2>ABOUT ME</h2>
+        <br>
+        <div id="about_me_text">
+          <p>I'm <strong>Kiarash Bakhshaei</strong>, a versatile professional with a unique blend of expertise in biology and computer science.</p>
+          
+          <p> I invite you to explore my journey, where science meets technology:</p>
+                  
+          <p>I've always been captivated by the intricate world of biology, leading me to pursue a major in dentistry. </p>
+          <p> However, as I neared graduation, I discovered another passion; <em>programming and computer science</em>. </p>
+          <p>Self-taught in <code>Python</code>, I quickly transitioned into a professional, opening doors to a realm where data science and machine learning became my forte.</p>
+                  
+          <p>I honed my skills at <em>Tehran University</em> in IRAN, delving into the fascinating world of computer science.</p>
+          <p> In addition to Python, I added an array of programming languages to my toolkit, including:</p>
+            <ul>
+              <li><code>C</code></li>
+              <li><code>HTML</code></li>
+              <li><code>CSS</code></li>
+              <li><code>JavaScript</code></li>
+              <li><code>SQL</code></li>
+            </ul>      
+          <p>This diverse skill set empowers me to tackle multifaceted challenges seamlessly.</p>
+          <p>My true passion lies in the convergence of artificial intelligence with my deep-rooted knowledge of biology. 
+          <p>The goal? To harness the potential of AI to revolutionize the field of bio-engineering. </p>
+          <p>My journey is a testament to my unrelenting curiosity, always eager to learn, grow, and adapt.</p>
+          
+          <p>With proficiency in three languages: <strong>Persian</strong>, <strong>English</strong>, and <strong>French</strong>. I bridge cultures and communicate seamlessly, a valuable asset in our interconnected world.</p>
+          <br>      
+          <p>Join me in my quest to bridge the realms of biology and computer science, where innovation knows no bounds.</p>
+          <p style="font-size:1.1em; font-weight: bold; font-style: italic;">Let's connect, collaborate, and make a meaningful impact together.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- progress bars -->
+      <div id="My_Abilities">
+        <h2>My Abilities</h2>
+        <br>
+        <div id="bars">
+          <div style="margin: 20px;">
+            <p>Python </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-label="Python" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
-        </nav>
-      <br>
-      <br>
-      <div>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
-  <pre>
-    Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt
-    ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in
-    voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur.
-     Excepteur sint occaecat
-    cupidatat non proident,
-    sunt in culpa qui
-    officia deserunt mollit anim id
-    est laborum.
-  </pre>
+          <div style="margin: 20px;">
+            <p>C </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="C" style="width: 75%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>SQL </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="SQL" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>IBM SPSS Modeler </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="IBM SPSS Modeler" style="width: 87%;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>Excel </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Excel" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>HTML </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="HTML" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>Css </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Css" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div style="margin: 20px;">
+            <p>JavaScript </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="JavaScript" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- contact me -->
+      <div id="conatct_me">
+        <h4>Contact Me</h4>
+        <address>
+          Email: <a href="mailto:k.bakhshaei@gmail.com" target="_blank">k.bakhshaei@gmail.com</a><br>
+          Phone number: (+98) 935-736-9443<br>
+          Github profile: <a href="https://github.com/KiarashBakh" target="_blank">KiarashBakh</a><br>
+          LinkedIn profile: <a href="https://www.linkedin.com/in/kiarash-bakhshaei-9b2499278" target="_blank">Kiarash Bakhshaei</a><br>
+        </address>
+      </div>
     </div>
   </body>
 </html>

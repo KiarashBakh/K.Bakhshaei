@@ -4,13 +4,14 @@ body {
     background-color: rgb(48, 37, 54);
     font-family: Arial, Helvetica, sans-serif;
     color: #ddd;
-    font-size:1em;
     overflow-wrap:break-word;
-    word-break: break-all;
+    word-break:normal;
 }
-body h1 {
+body h1, h2 {
     text-align: center;
 }
+
+/* hero */
 span.small{
     font-variant: small-caps;
     font-weight: bold;
@@ -28,45 +29,142 @@ div.hero > h1 {
     font-size:2.5vw;
 }
 #hero-image {
+    box-sizing:content-box;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8)), url("background.jpg");
     height: 100%;
+    width: calc(100% - 200px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    float: right;
 }
 div.hero > p {
     display: none;
     font-size:1.4vw;
 }
-@media only screen and (max-width: 600px){
-    .hero {
-        padding:15%;
-    }
-    div.hero > h1 {
-        font-size:1.3em;
-    }
-    div.hero > p {
-        font-size:1em;
-    }
-}
-#nav-fam {
-    box-sizing:border-box;
-    padding-bottom:20mm;
+
+/* nav bar */
+nav {
+    background-color: #2c002c;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 20px;
 }
 .navbar {
-    background-color: #231123;
-    padding:0;
-
+    z-index: 2;
+    height: auto;
+    width: 100%;
 }
 .nav-link {
     color: #eee !important;
-    margin:auto;
-    font-size:1em;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0px 10px 10px;
+    font-size: 1em;
+    display: block;
+    text-decoration: none;
 }
-nav div a:hover, .navbar-toggler-icon:hover {
+nav a:hover, .navbar-toggler-icon:hover {
     background-color: #543354;
 }
-nav div a.active {
+nav a.active {
     background-color: #540065;
 }
+.container-fluid {
+    padding-right: 0;
+}
+i {
+    color: #ede;
+}
+
+
+/* main content */
+#main {
+    margin-left:200px;
+    padding: 40px;
+}
+hr {
+    height:2px;
+    border-width:2px;
+    color:#1b001b;
+    background-color:#1b001b
+}
+#about_me {
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 30px;
+}
+#about_me_text {
+    padding-left: 10%;
+}
+#My_Abilities {
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+/* progress bars */
+.progress {
+    height: 7px;
+    width: 50%;
+    margin: auto;
+}
+#bars p {
+    margin-left: 25%;
+}
+
+/* contact me */
+#conatct_me {
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 20px;
+    padding-top: 40px;
+}
+address {
+    display: block;
+    font-style: italic;
+    margin-left: 23px;
+}
+
+
+@media only screen and (max-width: 990px){
+.hero {
+    padding:15%;
+}
+div.hero > h1 {
+    font-size:1.3em;
+}
+div.hero > p {
+    font-size:1em;
+}
+#hero-image{
+    width: 100%;
+}
+nav {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#main {
+    margin: auto;
+}
+#about_me_text {
+    margin-top:30px;
+}
+.progress {
+    width: 70%;
+}
+#bars p {
+    margin-left: 15%;
+}
+}
+
