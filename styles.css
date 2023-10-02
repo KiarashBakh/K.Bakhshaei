@@ -1,7 +1,7 @@
 body {
     box-sizing:content-box;
     position:static;
-    background-color: #2e0a2c;
+    background-color: #280a33;
     font-family: Arial, Helvetica, sans-serif;
     color: #dfb6b2;
     overflow-wrap:break-word;
@@ -10,7 +10,9 @@ body {
 body h1, h2 {
     text-align: center;
 }
-
+code {
+    color: #ec7f8c;
+}
 /* hero */
 span.small{
     font-variant: small-caps;
@@ -49,7 +51,7 @@ div.hero > p {
 
 /* nav bar */
 nav {
-    background-color: #140014;
+    background-color: #07041e;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -75,10 +77,10 @@ nav {
     text-decoration: none;
 }
 nav a:hover, .navbar-toggler-icon:hover {
-    background-color: #2b124c;
+    background-color: #4f08319a;
 }
 nav a.active {
-    background-color: #2b124c;
+    background-color: #4f0832;
 }
 .container-fluid {
     padding-right: 0;
@@ -120,6 +122,9 @@ hr {
     width: 50%;
     margin: auto;
 }
+.progress-bar {
+    background-color: #801336;
+}
 #bars p {
     margin-left: 25%;
 }
@@ -136,6 +141,9 @@ address {
     display: block;
     font-style: italic;
     margin-left: 23px;
+}
+address > a {
+    color: #b65964;
 }
 
 
