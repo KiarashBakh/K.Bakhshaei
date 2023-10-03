@@ -155,11 +155,13 @@ hr {
     height: 7px;
     width: 50%;
     margin: auto;
+    background-color: #dfb6b2;
 }
 .progress-bar {
     background-color: #801336;
 }
 #bars p {
+    margin: 20px;
     margin-left: 25%;
 }
 
