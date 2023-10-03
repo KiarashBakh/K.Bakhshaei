@@ -58,9 +58,9 @@ span.small{
     box-sizing: border-box;
     text-align: center;
     font-family: "Times New Roman", Georgia, Garamond, serif;
-    padding: 15% 15%;
+    padding: 15% 0%;
     position: initial;
-    width: 65%;
+    width: 49%;
     float: left;
     color: #dfb6b2;
 
