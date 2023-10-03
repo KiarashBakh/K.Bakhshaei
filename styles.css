@@ -9,7 +9,7 @@ body {
 }
 [lang='fa'] {
     direction: rtl;
-    font-family: 'Noto Naskh Arabic';
+    font-family: 'Noto Naskh Arabic', 'Noto Sans Old Persian';
     font-size: 1.1em;
 }
 body h1, h2 {
@@ -17,6 +17,12 @@ body h1, h2 {
 }
 code {
     color: #ec7f8c;
+}
+hr {
+    height:2px;
+    border-width:3px;
+    color:#070007;
+    background-color:#070007
 }
 
 /* language change */
@@ -123,12 +129,6 @@ i {
 #main {
     margin-left:200px;
     padding: 40px;
-}
-hr {
-    height:2px;
-    border-width:2px;
-    color:#190019;
-    background-color:#190019
 }
 #about_me {
     box-sizing: border-box;
