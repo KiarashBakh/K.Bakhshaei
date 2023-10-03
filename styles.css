@@ -20,10 +20,17 @@ code {
 }
 
 /* language change */
+.lang_button {
+    box-sizing:border-box; 
+    float:right; 
+    font-size: 12px; 
+    display:inline;
+}
 #languages {
     color: #dfb6b2;
     background-color: #07041e;
     border-style: none;
+    
 }
 #languages:hover {
     background-color: #4f08319a;
@@ -92,7 +99,7 @@ nav {
 .nav-link {
     color: #dfb6b2 !important;
     width: 190px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px 0px 10px 10px;
     font-size: 1em;
     display: block;
@@ -190,9 +197,17 @@ nav {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.nav-link {
+    width: 100%;
+}
 #main {
     margin: auto;
     padding: 20px;
+}
+.farsi {
+    padding: 20px;
+    margin:auto;
+    margin-left:0px;
 }
 #about_me_text {
     margin-top:30px;

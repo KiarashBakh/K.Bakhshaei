@@ -14,12 +14,13 @@
     <title>Kiarash Bakhshaei</title>
   </head>
   <body>
+
     <!-- nav bar -->
     <nav class="navbar-expand-lg">
-      <div style="box-sizing: border-box; height: 15px;">
-        <button id="languages" style="float:right; font-size: 13px; display: inline !important;" lang="fa" onclick="showFarsiContent()">فا</button>
-        <span style="float:right; font-size: 12px;">|</span>
-        <button id="languages" style="float:right; font-size: 12px; display: inline !important;" onclick="showEnglishContent()">En</button>
+      <div class="lang_button">
+        <button id="languages" onclick="showEnglishContent()">En</button>
+        <span>|</span>
+        <button id="languages" style="font-size: 13px;" lang="fa" onclick="showFarsiContent()">فا</button>
       </div>
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -202,7 +203,7 @@
           <h3>ارتباط با من</h3>
           <address>
             ایمیل: <a href="mailto:k.bakhshaei@gmail.com" target="_blank">k.bakhshaei@gmail.com</a><br>
-            شماره تماس: (+98) 935-736-9443<br>
+            شماره تماس: <span lang="en" style="direction: ltr !important;">0935-736-9443</span><br>
             گیت هاب: <a href="https://github.com/KiarashBakh" target="_blank">KiarashBakh</a><br>
             لینکداین: <a href="https://www.linkedin.com/in/kiarash-bakhshaei-9b2499278" target="_blank">Kiarash Bakhshaei</a><br>
           </address>
