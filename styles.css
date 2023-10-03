@@ -1,5 +1,6 @@
 body {
-    box-sizing:content-box;
+    box-sizing:border-box;
+    width:100%;
     position:static;
     background-color: #280a33;
     font-family: Arial, Helvetica, sans-serif;
@@ -147,7 +148,7 @@ i {
 .farsi {
     padding: 40px;
     margin-right: 10%;
-    margin-left:200px;
+    margin-left:0px;
 }
 
 /* progress bars */
