@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const referenceBottom = referenceTop + referenceElement.offsetHeight;
       
       // if the scroll position is in the reference section
-      if (scroll_Position >= referenceTop && scroll_Position < referenceBottom) {
+      if (scroll_Position >= referenceTop && scroll_Position <= referenceBottom) {
         link.classList.add("active");
       } else {
         link.classList.remove("active");
