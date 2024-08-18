@@ -20,13 +20,13 @@ window.onresize = small_width;
 
 
 var i = 1;
-setInterval(jobs, 2000);
+setInterval(jobs, 1250);
 function jobs(){
   for (n = 0; n < 3; n++){
     document.getElementById(n.toString()).style.display = "none";
   };
   document.getElementById(i.toString()).style.display = "inline";
-  i = (i+1)%3;
+  i = (i + 1) % 3;
 };
 
 // highlight active link on scroll
