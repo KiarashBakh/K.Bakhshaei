@@ -84,3 +84,13 @@ function showEnglishContent() {
     element.classList.add('hide');
   });
 }
+
+  // // Function to check if Tableau visualization is loaded
+  // function checkTableauLoad() {
+  //   const tableauDiv = document.getElementsByClassName("tableauServer");
+  //   if (tableauDiv.innerHTML.trim() !== '') {
+  //     tableauDiv.style.display = 'block';
+  //   } else {
+  //     document.getElementById('noConnectionImage').style.display = 'block';
+  //   }
+  // }

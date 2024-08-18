@@ -80,6 +80,7 @@ div.hero > h1 {
     position: relative;
     float: right;
 }
+
 div.hero > p {
     display: none;
     font-size:1.4vw;
