@@ -1,5 +1,4 @@
 // hero changing ellements
-
 function small_width() {
   if (window.innerWidth  <= 600) {
     document.getElementById("0").innerHTML = "Programmer";
@@ -30,7 +29,6 @@ function jobs(){
 };
 
 // highlight active link on scroll
-
 document.addEventListener("DOMContentLoaded", function() {
   const nav_links = document.querySelectorAll(".nav-link");
   window.addEventListener("scroll", function() {
@@ -84,13 +82,3 @@ function showEnglishContent() {
     element.classList.add('hide');
   });
 }
-
-  // // Function to check if Tableau visualization is loaded
-  // function checkTableauLoad() {
-  //   const tableauDiv = document.getElementsByClassName("tableauServer");
-  //   if (tableauDiv.innerHTML.trim() !== '') {
-  //     tableauDiv.style.display = 'block';
-  //   } else {
-  //     document.getElementById('noConnectionImage').style.display = 'block';
-  //   }
-  // }

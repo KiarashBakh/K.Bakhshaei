@@ -154,7 +154,7 @@ i {
 }
 
 /* progress bars */
-.progress {
+/* .progress {
     height: 7px;
     width: 50%;
     margin: auto;
@@ -166,6 +166,25 @@ i {
 #bars p {
     margin: 20px;
     margin-left: 25%;
+} */
+.image-container {
+position: relative;
+}
+
+.failed_connection {
+position: relative;
+margin-left: 15%;
+width: 60%;
+height: auto;
+border: none;
+z-index: 1;
+}
+
+.tableauViz {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
 }
 
 /* contact me */
