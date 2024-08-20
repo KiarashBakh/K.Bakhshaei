@@ -174,7 +174,7 @@ position: relative;
 .failed_connection {
 position: relative;
 margin-left: 15%;
-width: 65%;
+width: 75%;
 height: auto;
 border: none;
 z-index: 1;
@@ -238,9 +238,13 @@ nav {
     margin-top:30px;
     padding: 0px;
 }
-.progress {
+/* .progress {
     width: 85%;
     padding: 0px;
+} */
+.failed_connection {
+width: 105%;
+margin-left: -2.5%;
 }
 #bars p {
     margin-left: 9%;
